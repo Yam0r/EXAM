@@ -3,9 +3,8 @@
 <head>
   <meta charset="UTF-8" >
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="viewport" content="width=device-width">
   <link rel="stylesheet" href="./css/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=2.0">
   <script src="https://kit.fontawesome.com/12dd6b153a.js" crossorigin="anonymous"></script>
   <link rel="apple-touch-icon" sizes="180x180" href="./favicons/apple-touch-icon.png" >
   <link rel="icon" type="image/png" sizes="32x32" href="./favicons/favicon-32x32.png" >
@@ -30,11 +29,11 @@
 </head>
 
 <body>
-  <div class="header">
+  <div class="header" id="header_st">
     <div>
       <img src="https://www.squadhelp.com/resources/assets/imgs/new_ui/logo_white.svg" alt="">
     </div>
-    <div class="block_search">
+    <div class="block_search" id="block_search">
       <input class="block_search_input" type="text" placeholder="Search over 100,000 names">
       <a href="#"><button class="block_search_img"><i class="fa-solid fa-magnifying-glass"></i></button></a>
     </div>
@@ -64,10 +63,13 @@
       </a>
       <a href="#"><button class="Start_contest">Start Contest</button></a>
     </div>
+    <div class="burger" id="burger">
+      <span></span>
+    </div>
   </div>
-  <div class="under_header">
+  <div class="under_header" id="under_header">
     <ul class="under_header_menu_1">
-      Names For Sale <span><i class="fa-solid fa-chevron-down"></i></span>
+     <span><span>Names For Sale</span> <i class="fa-solid fa-chevron-down"></i></span>
       <ul>
         <li>Popular Brandale Names</li>
         <li>Premium Domains For Sale</li>
@@ -85,7 +87,7 @@
       </ul>
     </ul>
     <ul class="under_header_menu_2">
-      Naming Contests <span><i class="fa-solid fa-chevron-down"></i></span>
+      <span><span>Naming Contests</span><span id="div_2_chevron"><i class="fa-solid fa-chevron-down" id="under_header_menu_2_shevron"></i></span></span>
       <ul>
         <li>Start A Contest</li>
         <li>How It Works</li>
@@ -98,7 +100,7 @@
       </ul>
     </ul>
     <ul class="under_header_menu_3">
-      Other Services <span><i class="fa-solid fa-chevron-down"></i></span>
+       <span> <span>Other Services</span><i class="fa-solid fa-chevron-down"></i></span>
       <ul>
         <li>Logos</li>
         <li>Taglines</li>
@@ -112,11 +114,12 @@
       <a href="#">Agency Experience</a>
     </ul>
     <ul class="under_header_menu_5">
-      Resources <span><i class="fa-solid fa-chevron-down"></i></span>
+       <span> <span>Resources</span><i class="fa-solid fa-chevron-down"></i></span>
       <ul>
         <li>Business Name Generator</li>
         <li>How to Naming Your Business</li>
-        <li class="left_arrow"><span><i class="fa-solid fa-chevron-left"></i></span>Free Trademark Checker
+        <li class="left_arrow"><span><i class="fa-solid fa-chevron-left"></i></span>
+          <p>Free Trademark Checker</p> 
           <ul>
             <li>Clothing Brand Name Ideas</li>
             <li>Consulting Business Name Ideas</li>
@@ -972,7 +975,7 @@
             </p>
           </div>
         </div>
-        <hr>
+        <hr>        
         <div class="services_block-3_space_content_2">
           <h3><a name="Buying_From_Marketplace"> Buying From Marketplace</a></h3>
 

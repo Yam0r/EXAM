@@ -1,3 +1,10 @@
+const burgerMenu = document.querySelector('#burger');
+const navMenu = document.querySelector('#under_header');
+
+burgerMenu.addEventListener('click', () => {
+  navMenu.classList.toggle('active');
+});
+
 $("#btn-1").on("click", function () {
   $("#div-1").slideToggle();
 });
@@ -245,3 +252,5 @@ $(function () {
     }
   });
 });
+
+
