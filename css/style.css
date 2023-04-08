@@ -18,7 +18,87 @@ a{
 a:target{
     text-decoration: none;
 }
-@media (max-width: 480px) {
+@media (min-width: 768px) and (max-width: 1024px){
+    body {
+        overflow-x: hidden;
+    }
+    .text_menu{
+        display: none;
+    }
+    .Start_contest{
+        display: none;
+    }
+    .block_content_picture{
+        display: none;
+    }
+    .block_content{
+        margin-left:0 !important;
+    }
+    .services-text{
+        width: 550px;
+        margin: 64px auto !important;
+    }
+    .service_area{
+        margin: 0 !important;
+    }
+    .services_block-2_content{
+        flex-direction: column;
+    }
+    
+    .services_block-2_content svg{
+        order: 2;
+        margin: 0 auto;
+    }
+    .services_block-3_content_list{
+        height:fit-content !important;
+    }
+    .services_block-3_content_list{
+        height:fit-content !important;
+        width: 100% !important;
+    }
+    .services_block-3{
+        flex-direction: column;
+    }
+    .ul_block_services{
+        width: 42.9em !important;
+    }
+    .services_block-3_space_content_1 button,
+    .services_block-3_space_content_2 button,
+    .services_block-3_space_content_3 button,
+    .services_block-3_space_content_4 button{
+        width: 100% !important;
+    }
+    .container_space-1_lg-2 > div{
+        flex-direction: column !important;
+    }
+    .media-body_2{
+        width: 39.4em !important;
+    }
+    .container_space-2_images>div{
+        width: 30.4em !important;
+        display:flex !important;
+        height: fit-content !important;
+        text-align: center !important; 
+        flex-wrap: wrap !important;
+    }
+    .container_space-3{
+      gap: 60px !important;
+    }
+    .container_space-3 ul{
+        padding: 0px !important;
+    }
+    .container_space-3 li, .container_space-3 a{
+        width: fit-content !important;
+    }
+    .Trending_Searches_flex{
+        display: block !important;
+    }
+    .footer_divs{
+        margin-top: 30px;
+    }
+    
+}
+@media (max-width: 768px) {
     body {
         overflow-x: hidden;
     }
@@ -88,6 +168,10 @@ a:target{
         bottom: 0;
         border-radius: 5px;
     }
+    #under_left_arrow{
+        margin-top: 250px;
+        font-size: 15px;
+    }
     .under_header{
         padding-top: 5px;
         display: none !important; 
@@ -96,14 +180,14 @@ a:target{
     .under_header.active{
         display: block !important;
         box-shadow: none;
-        margin-bottom: 120px;
     }
     
     #under_header{
         box-shadow: #4a4a4a 4px 4px 4px;
         position: absolute;
         z-index: 1;
-        height: 400px;
+        height: 550px;
+
 
     }
     .under_header_menu_1,.under_header_menu_2,.under_header_menu_3,
@@ -113,11 +197,21 @@ a:target{
     }
     
     .under_header_menu_1 ul,.under_header_menu_2 ul,.under_header_menu_3 ul,
-    .under_header_menu_4 ul,.under_header_menu_5 ul{        
-        margin-bottom: 100%;
+    .under_header_menu_4 ul{   
+        width: 100% !important;     
+        border-radius: none !important;
+        box-shadow: none !important;
+        display: block;
+        position: relative !important;
+        z-index: 1;
+    }
+    .under_header_menu_5 ul{
+        width: 100% !important;     
+        border-radius: none !important;
+        box-shadow: none !important;
+        display: block;
         position: absolute !important;
         z-index: 1;
-        transition: transform 0.3s ease-out;
     }
     .under_header_menu_1>span,.under_header_menu_2>span,.under_header_menu_3>span,
     .under_header_menu_4>span,.under_header_menu_5>span{        
@@ -140,6 +234,12 @@ a:target{
     .under_header_menu_2 #div_2_chevron{
     padding-right: 0;
     }
+    .left_arrow{
+        display: flex;
+        gap:8.75rem;
+        width: fit-content;
+    }
+
     .left_arrow p{
         margin-bottom: 0px;
         margin-top: 0px;
@@ -216,8 +316,6 @@ a:target{
         font-size: 24px !important;
     }
     .services_block-2{
-        /* display: flex;
-        flex-direction: column;  */
         padding: 2rem!important;
         width: 255px;
         height: fit-content !important;
@@ -657,6 +755,13 @@ a:target{
     position: absolute;
     cursor: pointer;
     margin-left:-140px;
+}
+.left_arrow{
+    display: flex;
+    justify-content:space-around;
+}
+.left_arrow p{
+    margin-top: 0px;
 }
 .left_arrow span{
     margin-left: -10px;
